@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function CharacterCard(props) {
+export default function CharacterTable(props) {
   return (
     <tr key={props.char_id}>
       <td className="border border-slate-500 bg-amber-100 text-center">

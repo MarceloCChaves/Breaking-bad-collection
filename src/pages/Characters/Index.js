@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 import CharacterTable from "../../components/CharacterTable/Index";
+import Navbar from "../../components/Navbar/Index";
 
 export default function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -35,14 +36,16 @@ export default function Characters() {
 
   return (
     <div className="flex flex-col place-content-center items-center justify-center my-5">
-      <input
-        type="text"
-        placeholder="Search..."
-        className="my-5 py-5 px-10 rounded-lg outline-none"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        autoComplete={characters}
-      />
+      <Navbar route="/" page="Home" />
+      {characters.length !== 0 && (
+        <input
+          type="text"
+          placeholder="Search..."
+          className="my-5 py-5 px-10 rounded-lg outline-none"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      )}
       <table className="w-full md:w-1/2">
         <thead>
           {characters.length !== 0 && (
@@ -67,6 +70,7 @@ export default function Characters() {
             {filteredSearch.map((character) => {
               return (
                 <CharacterTable
+                  key={character.char_id}
                   char_id={character.char_id}
                   name={character.name}
                   nickname={character.nickname}
@@ -79,6 +83,7 @@ export default function Characters() {
             {currentItens.map((character) => {
               return (
                 <CharacterTable
+                  key={character.char_id}
                   char_id={character.char_id}
                   name={character.name}
                   nickname={character.nickname}

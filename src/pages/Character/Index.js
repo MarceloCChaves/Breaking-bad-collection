@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../../services/api";
-import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar/Index";
 
 export default function Character() {
   const [character, setCharacter] = useState([]);
@@ -27,15 +27,16 @@ export default function Character() {
 
   return (
     <div className="flex flex-col place-content-center items-center justify-center my-5">
+      <Navbar
+        route="/Characters"
+        page="characters"
+      />
       {character.length <= 0 ? (
         <h1 className="text-3xl font-bold text-stone-50">
           Loading character
-        </h1>
+        </h1> 
       ) : (
         <>
-          <Link to="/Characters">
-            <button className="text-stone-50 rounded-lg bg-red-700 hover:bg-red-600 px-5 py-2 m-3">Voltar</button>
-          </Link>
           {character.map((character) => {
             return (
               <div
