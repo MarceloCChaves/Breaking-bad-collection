@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Breakingbad from "../../assets/Breaking_Bad_logo.svg.png";
+import BreakingbadLogo from "../../assets/Breaking_Bad_logo.svg.png";
 
 export default function Home() {
   return (
     <div className="flex justify-evenly text-center flex-wrap items-center h-screen ">
-      <div>
+      <div className="flex flex-col items-center">
         <img
-          src={Breakingbad}
-          className="max-w-xs"
+          src={BreakingbadLogo}
+          className="max-w-xs mb-5"
           alt="Breaking bad"
           loading="lazy"
         />
-        <p className="text-xl font-bold text-stone-50 mt-3">Copyright © Developed by <a href="https://github.com/MarceloCChaves">Marcelo Chaves</a></p>
+        <p className="text-xl font-bold text-stone-50 mt-3">Developed by <a href="https://github.com/MarceloCChaves">Marcelo Chaves</a> using <a href="https://www.breakingbadapi.com/">Breaking bad api</a></p>
       </div>
       <div>
         <h1 className="text-3xl font-bold text-stone-50 my-5">

@@ -57,7 +57,7 @@ export default function Characters() {
                 Name
               </th>
               <th className="border-collapse border border-slate-500 bg-amber-300 p-1">
-                Nickname
+                Status
               </th>
               <th className="border-collapse border border-slate-500 bg-amber-400 p-1">
                 More data
@@ -73,7 +73,7 @@ export default function Characters() {
                   key={character.char_id}
                   char_id={character.char_id}
                   name={character.name}
-                  nickname={character.nickname}
+                  status={character.status}
                 />
               );
             })}
@@ -86,7 +86,7 @@ export default function Characters() {
                   key={character.char_id}
                   char_id={character.char_id}
                   name={character.name}
-                  nickname={character.nickname}
+                  status={character.status}
                 />
               );
             })}

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function CharacterTable(props) {
+  const colorDeadOrAlive = props.status === "Alive" ? "bg-lime-500" : "bg-red-700"
   return (
     <tr key={props.char_id}>
       <td className="border border-slate-500 bg-amber-100 text-center">
@@ -10,8 +11,8 @@ export default function CharacterTable(props) {
       <td className="border border-slate-500 bg-amber-200 text-center">
         {props.name}
       </td>
-      <td className="border border-slate-500 bg-amber-300 text-center">
-        {props.nickname}
+      <td className={`border border-slate-500 text-center text-stone-50 ${colorDeadOrAlive}`}>
+        {props.status}
       </td>
       <td className="border border-slate-500 bg-amber-400 text-center py-2">
         <Link to={`/Characters/${props.char_id}`}>
