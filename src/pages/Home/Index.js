@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Breakingbad from "../../assets/Breakingbad.jpg";
+import Breakingbad from "../../assets/Breaking_Bad_logo.svg.png";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
           alt="Breaking bad"
           loading="lazy"
         />
+        <p className="text-xl font-bold text-stone-50 mt-3">Copyright © Developed by <a href="https://github.com/MarceloCChaves">Marcelo Chaves</a></p>
       </div>
       <div>
         <h1 className="text-3xl font-bold text-stone-50 my-5">
