@@ -4,7 +4,7 @@
 O objetivo da aplicação é desenvolver uma aplicação em reactjs que atenda as seguintes funcionalidades:
 - Selecione uma Api qualquer. ✔️
 - Criação de uma página inicial simples. ✔️
-- Faça uma aplicação utilizando React que consuma a Api e exiba os dados em uma tabela dentro da aplicação. ✔️
+- Faça uma aplicação utilizando React que consuma a Api e exiba os dados em uma tabela. ✔️
 - Permitir uma consulta personalizada. ✔️
 - Características adicionais a formação da tabela como: Filtragem, paginação e outras. ✔️
 -  Estilização da tabela como um todo e por valores individuais nas células. ✔️
