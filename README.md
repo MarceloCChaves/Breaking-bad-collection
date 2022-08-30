@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/62251064/187470217-5f9ec39f-a312-4d9f-
 ## 📁 Clonando o Repositório
 - Abra o terminal da sua IDE digitando os comandos seguindo o passo a passo abaixo
 ```
-git clone https://github.com/MarceloCChaves/Teste-Left-React-Native.git
+git clone https://github.com/MarceloCChaves/Breaking-bad-collection.git
 npm install
 npm run start
 ```
